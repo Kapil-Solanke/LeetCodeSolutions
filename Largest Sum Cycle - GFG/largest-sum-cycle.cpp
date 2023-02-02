@@ -30,6 +30,23 @@ class Solution
         pathvis[node]=-1;
         return;
     }
+    void dfs2(int node,int dis,unordered_map<int,int>&dist,vector<int>adj[])
+    {
+        vis[node]=1;
+        dist[node]=dis;
+        for(auto i:adj[node])
+        {
+            if(vis[i]==0)
+                dfs2(i,node+dist[node],dist,adj);
+            
+            else if(dist.find(i)!=dist.end())
+            {
+                ans =max(ans,dist[node]-dist[i]+node);
+                return;
+            }
+        }
+        return;
+    }
   long long largestSumCycle(int N, vector<int> Edge)
   {
       vector<int>adj[N];
@@ -40,10 +57,16 @@ class Solution
           if(Edge[i]==-1)continue;
           adj[i].push_back(Edge[i]);
       }
-      for(int i=0;i<N;i++)
-      {
-          if(!vis[i])dfs(i,-1,adj);
-      }
+    //   for(int i=0;i<N;i++)
+    //   {
+    //       if(!vis[i])dfs(i,-1,adj);
+    //   }
+    for(int i=0;i<N;i++)
+        {
+            unordered_map<int,int>dist;
+            if(vis[i]==0)
+                dfs2(i,i,dist,adj);
+        }
       return ans==0?-1:ans;
   }
 };
