@@ -100,12 +100,11 @@ int main() {
   // vector<int> parentArray = {-1,0,0,1,2,2};//test case 3
   // vector<int> parentArray = {-1,0,0,1,2};//test case 4
   // vector<int> parentArray = {-1,0,0,1,1,2,2,3,4,6,6};//test case 5
-  // vector<int> parentArray =
-  // {-1,0,0,1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9,10,10,11,11,12,12,13,13,14,14};//test
-  // case 6 vector<int> parentArray = {-1, 0, 0, 1, 1, 3, 4,4,5 };//my test case
-  // 1 vector<int>parentArray= {-1,0,0,1,1,2,2}; //my test case 2 vector<int>
-  // parentArray = {-1,0,0,1,1,2,4,5}; // my test case 3 vector<int> parentArray
-  // = {-1, 0, 0, 1, 1, 3, 5 };//my test case 4
+  // vector<int> parentArray = {-1,0,0,1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9,10,10,11,11,12,12,13,13,14,14};//testcase 6 
+  // vector<int> parentArray = {-1, 0, 0, 1, 1, 3, 4,4,5 };//my test case 1
+  // vector<int>parentArray= {-1,0,0,1,1,2,2}; //my test case 2 
+  //vector<int> parentArray = {-1,0,0,1,1,2,4,5}; // my test case 3 
+  //vector<int> parentArray= {-1, 0, 0, 1, 1, 3, 5 };//my test case 4
   vector<int> parentArray = {-1, 0, 1, 2, 3}; // my test case 5
 
   // corner case
